@@ -1,4 +1,4 @@
-# This workflow will triage pull requests and apply a label based on the#
+# #
 # This is free software, lisence use MIT.
 # 
 # Copyright (C) 2019 P3TERX <https://p3terx.com>
@@ -15,9 +15,9 @@ on:
 #  push:
 #    tags:
 #      - '*'
-  push:
-    branches: 
-      - master
+#  push:
+#    branches: 
+#      - master
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede.git
   REPO_BRANCH: master
