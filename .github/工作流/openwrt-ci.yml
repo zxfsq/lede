@@ -15,9 +15,9 @@ on:
 #  push:
 #    tags:
 #      - '*'
-#  push:
-#    branches: 
-#      - master
+  push:
+    branches: 
+      - master
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede.git
   REPO_BRANCH: master
@@ -116,14 +116,3 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./bin/
-on: [pull_request]
-
-jobs:
-  label:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/labeler@v2
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
