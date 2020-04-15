@@ -93,7 +93,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: OpenWrt_firmware
-          path: ./bin/targets/
+          path: ./bin/
 
       - name: Create release
         if: github.event == 'push'
