@@ -19,7 +19,7 @@ on:
     branches: 
       - master
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede.git
+#  REPO_URL: https://github.com/coolsnowwolf/lede.git
   REPO_BRANCH: master
   CONFIG_FILE: .config
 #  DIY_SH: diy.sh
