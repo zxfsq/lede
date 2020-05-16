@@ -15,9 +15,9 @@ on:
 #  push:
 #    tags:
 #      - '*'
-#  push:
-#    branches: 
-#      - master
+  push:
+    branches: 
+      - master
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede.git
   REPO_BRANCH: master
@@ -58,6 +58,7 @@ jobs:
           mkdir openwrt-packages
           cd openwrt-packages
           git clone https://github.com/Lienol/openwrt-package.git
+          git clone https://github.com/chengood5000/passwall652.git
           df -h
       - name: Update feeds
         run: |
