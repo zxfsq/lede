@@ -15,9 +15,9 @@ on:
 #  push:
 #    tags:
 #      - '*'
-#  push:
-#    branches: 
-#      - master
+  push:
+    branches: 
+      - master
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede.git
   REPO_BRANCH: master
